@@ -1,6 +1,6 @@
 ;; functions.lisp
 
-;; Named functions
+;; named functions
 ;; ~~~~~~~~~~~~~~~
 ;;
 ;; You define functions using the defun macro:
@@ -12,4 +12,13 @@
          (fib (- n 2)))))
 ;;
 ;; And call them like you call anything else:
-(fib 30)
+(fib 30) ;; 832040
+
+;; anonymous functions
+;; ~~~~~~~~~~~~~~~~~~~
+;;
+;; Functions can be called indirectly using funcall:
+(funcall #'fib 30) ;; 832040
+;;
+;; Or with apply:
+(apply #'fib (list 30)) ;; 832040
