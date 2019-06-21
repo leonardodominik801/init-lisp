@@ -1,4 +1,4 @@
-;; firststeps.lisp
+;; firststeps.lisp: https://lisp-lang.org/learn/first-steps
 
 #|
   Lisp syntax is very simple: there are few rules to remember. 
