@@ -10,4 +10,9 @@
   Keywords evaluate to themselves: you can think of them sort of like enums.
 |#
 
-(format t "Hello, world!")
+(format t "Hello, world!") 
+
+;;--------------------------- execs ----------------------------
+;;CL-USER> (format t "Hello, world!"
+;;Hello, world!
+;;NIL
