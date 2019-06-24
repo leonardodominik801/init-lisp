@@ -16,3 +16,19 @@
 (let* ((x 1)
        (y (+ x 1)))
   y) ;; => 2
+
+;; dynamic variables
+;; ~~~~~~~~~~~~~~~~~
+
+;; Dynamic variables are sort of like global variables, but more useful: 
+;; they are dynamically scoped.
+(defparameter *string* "I'm global")
+(defun print-variable () (print *string*))
+(print-variable) ;; Prints "I'm global"
+(let ((*string* "I have dynamic extent"))
+     (print-variable)) ;; Prints "I have dynamic extent"
+(print-variable) ;; Prints "I'm global"
+
+;; when you redefine the value of a dynamic variable using let, the variable 
+;; is bound to the new value inside the body of the let, and the old value 
+;; is ‘restored’ afterwards.
