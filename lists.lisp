@@ -2,7 +2,6 @@
 
 ;; basics
 ;; ~~~~~~
-
 ;; Lists can be built using the list function:
 (list 1 2 3)
 
@@ -26,7 +25,6 @@ my-list ;; (1 65 3)
 
 ;; higher-order-functions
 ;; ~~~~~~~~~~~~~~~~~~~~~~
-
 ;; The map function takes a function and a list, goes through 
 ;; each element in the sequence, and returns a new list where 
 ;; every element is the result of calling that function with 
